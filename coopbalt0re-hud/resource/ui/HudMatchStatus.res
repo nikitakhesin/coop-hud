@@ -2,328 +2,164 @@
 {
 	"HudMatchStatus"
 	{
-		"fieldName"		"HudMatchStatus"
-		"avatar_width"	"63"
-		"spacer"		"5"
-		"name_width"	"57"
-		"horiz_inset"	"2"
+		"fieldName"									"HudMatchStatus"
+		"avatar_width"								"63"
+		"spacer"									"5"
+		"name_width"								"57"
+		"horiz_inset"								"2"
 	}
-
-	"RoundSignModel"
-	{
-		"ControlName"	"CModelPanel"
-		"fieldName"		"RoundSignModel"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"3"		
-		"wide"			"f0"
-		"tall"			"f0"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"1"
-		"fov"			"70"
-		"proportionaltoparent"	"1"
-		
-		"model"
-		{
-			"modelname"	"models/props_ui/banner.mdl"
-			"skin"		"0"
-			"angles_x"	"30"
-			"angles_y"	"180"
-			"angles_z"	"0"
-			"origin_x"	"150"
-			"origin_y"	"0"
-			"origin_z"	"62"
-			"spotlight"	"1"
-
-			"animation"
-			{
-				"name"			"ref"
-				"sequence"		"ref"
-				"default"		"1"
-			}
-
-			"animation"
-			{
-				"name"			"intro"
-				"sequence"		"intro"
-			}
-			
-			"animation"
-			{
-				"name"			"outro"
-				"sequence"		"outro"
-			}
-		}
-	}
-	
 	"CountdownLabel"
-	{	
-		"ControlName"	"CExLabel"
-		"fieldName"		"CountdownLabel"
-		"font"			"HudFontGiant"
-		"xpos"			"cs-0.5"
-		"ypos"			"cs-0.1"
-		"wide"			"40"
-		"tall"			"40"
-		"zpos"			"5"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"1"
-		"wrap"			"0"
-		"labelText"		"%countdown%"
-		"textAlignment"	"center"
-		"proportionaltoparent"	"1"
-		"fgcolor"		"TanLight"
+	{
+		"ControlName"								"CExLabel"
+		"fieldName"									"CountdownLabel"
+		"font"										"m0refont24Shadow"
+		"xpos"										"cs-0.5"
+		"ypos"										"cs-0.1"
+		"wide"										"40"
+		"tall"										"40"
+		"zpos"										"5"
+		"visible"									"0"
+		"enabled"									"1"
+		"labelText"									"%countdown%"
+		"textAlignment"								"center"
+		"proportionaltoparent"						"1"
+		"fgcolor"									"White"
 
-		if_readymode
+		"if_readymode"
 		{
-			"xpos"			"300"
-			"ypos"			"130"
+			"xpos"									"300"
+			"ypos"									"130"
 		}
 	}
-	
-	"CountdownLabelShadow"
-	{	
-		"ControlName"	"CExLabel"
-		"fieldName"		"CountdownLabelShadow"
-		"font"			"HudFontGiant"
-		"xpos"			"cs-0.48"
-		"ypos"			"cs-0.08"
-		"wide"			"40"
-		"tall"			"40"
-		"zpos"			"4"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"1"
-		"wrap"			"0"
-		"labelText"		"%countdown%"
-		"textAlignment"	"center"
-		"fgcolor"		"Black"
-		"proportionaltoparent"	"1"
-
-	
-		if_readymode
-		{
-			"xpos"			"300"
-			"ypos"			"130"
-		}
-	}	
-
 	"FrontParticlePanel"
 	{
-		"ControlName"	"CTFParticlePanel"
-		"fieldName"		"FrontParticlePanel"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"3"
-		"wide"			"f0"
-		"tall"			"f0"
-		"visible"		"1"
-		"proportionaltoparent"	"1"
+		"ControlName"								"CTFParticlePanel"
+		"fieldName"									"FrontParticlePanel"
+		"xpos"										"0"
+		"ypos"										"0"
+		"zpos"										"3"
+		"wide"										"f0"
+		"tall"										"f0"
+		"visible"									"1"
+		"proportionaltoparent"						"1"
 
 		"ParticleEffects"
 		{
 			"0"
 			{
-				"particle_xpos" "c0"
-				"particle_ypos" "c0"
-				"particle_scale"	"2"
-				"particleName"	"versus_door_slam"
-				"start_activated" "0"
-				"loop"	"0"
+				"particle_xpos"						"c0"
+				"particle_ypos"						"c0"
+				"particle_scale"					"2"
+				"particleName"						"versus_door_slam"
+				"start_activated"					"0"
+				"loop"								"0"
 			}
 		}
 
-		"paintbackground"	"0"	
+		"paintbackground"							"0"
 	}
-
 	"MatchDoors"
 	{
-		"ControlName"	"CModelPanel"
-		"fieldName"		"MatchDoors"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"2"		
-		"wide"			"f0"
-		"tall"			"f0"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"1"
-		"fov"			"70"
-		"proportionaltoparent"	"1"
-		
-		"model"
+		"ControlName"								"CModelPanel"
+		"fieldName"									"MatchDoors"
+		"xpos"										"0"
+		"ypos"										"0"
+		"zpos"										"2"
+		"wide"										"f0"
+		"tall"										"f0"
+		"visible"									"0"
+		"enabled"									"1"
+		"fov"										"70"
+		"proportionaltoparent"						"1"
+
+		"Model"
 		{
-			"modelname"	"models/vgui/versus_doors.mdl"
-			"skin"		"0"
-			"angles_x"	"0"
-			"angles_y"	"0"
-			"angles_z"	"0"
-			"origin_x"	"120"
-			"origin_y"	"0"
-			"origin_z"	"-77"
+			"modelname"								"models/vgui/versus_doors.mdl"
+			"skin"									"0"
+			"angles_x"								"0"
+			"angles_y"								"0"
+			"angles_z"								"0"
+			"origin_x"								"120"
+			"origin_y"								"0"
+			"origin_z"								"-77"
 
 			"animation"
 			{
-				"name"			"ref"
-				"sequence"		"ref"
-				"default"		"1"
+				"name"								"ref"
+				"sequence"							"ref"
 			}
-
 			"animation"
 			{
-				"name"			"open"
-				"sequence"		"open"
+				"name"								"open"
+				"sequence"							"open"
 			}
-			
 			"animation"
 			{
-				"name"			"close"
-				"sequence"		"close"
+				"name"								"close"
+				"sequence"							"close"
 			}
-
 			"animation"
 			{
-				"name"			"idle_closed"
-				"sequence"		"idle_closed"
+				"name"								"idle_closed"
+				"sequence"							"idle_closed"
 			}
 		}
-	}	
-
+	}
 	"RoundCounter"
 	{
-		"fieldName"		"RoundCounter"
-		"xpos"			"cs-0.5"
-		"ypos"			"-2"
-		"zpos"			"1"		
-		"wide"			"300"
-		"tall"			"0"
-		"visible"		"1"
-		"enabled"		"1"
-	}	
-
-	"BGFrame"
-	{
-		"ControlName"		"EditablePanel"
-		"fieldName"			"BGFrame"
-		"xpos"				"9999"
-		"ypos"				"-5"
-		"zpos"				"0"
-		"wide"				"0"
-		"tall"				"28"
-		"visible"			"0"
-
-		"proportionaltoaparent"	"1"
-		"border"			"TFFatLineBorder"
-
-		if_match
-		{
-			"visible"		"1"
-		}
+		"fieldName"									"RoundCounter"
+		"xpos"										"cs-0.5"
+		"ypos"										"0"
+		"zpos"										"1"
+		"wide"										"70"
+		"tall"										"30"
+		"visible"									"1"
+		"enabled"									"1"
 	}
-
-	"RankUpLabel"
-	{	
-		"ControlName"	"CExLabel"
-		"fieldName"		"RankUpLabel"
-		"font"			"HudFontMediumSmallBold"
-		"xpos"			"cs-0.5"
-		"ypos"			"80"
-		"wide"			"600"
-		"tall"			"60"
-		"zpos"			"5"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"wrap"			"0"
-		"centerwrap"	"1"
-		"alpha"			"0"
-		"labelText"		"%rank_possibility%"
-		"textAlignment"	"center"
-		"proportionaltoparent"	"1"
-		"fgcolor"		"TanLight"
-	}
-
-	"RankUpShadowLabel"
-	{	
-		"ControlName"	"CExLabel"
-		"fieldName"		"RankUpShadowLabel"
-		"font"			"HudFontMediumSmallBold"
-		"xpos"			"cs-0.5+2"
-		"ypos"			"80+2"
-		"wide"			"600"
-		"tall"			"60"
-		"zpos"			"5"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"wrap"			"0"
-		"centerwrap"	"1"
-		"alpha"			"0"
-		"labelText"		"%rank_possibility%"
-		"textAlignment"	"center"
-		"proportionaltoparent"	"1"
-		"fgcolor"		"Black"
-	}
-
 	"ObjectiveStatusTimePanel"
 	{
-		"ControlName"		"EditablePanel"
-		"fieldName"			"ObjectiveStatusTimePanel"
-		"xpos"				"c-55"
-		"ypos"				"0"	[$WIN32]
-		"zpos"				"2"
-		"wide"				"110"
-		"tall"				"150"
-		"visible"			"1"
-		"enabled"			"1"
-		"delta_item_x"			"22"	[$WIN32]
-		"delta_item_start_y"	"50"
-		"delta_item_end_y"		"70"
-		"PositiveColor"			"0 255 0 255"
-		"NegativeColor"			"255 0 0 255"
-		"delta_lifetime"		"1.5"
-		"delta_item_font"		"Zesty14"
+		"ControlName"								"EditablePanel"
+		"fieldName"									"ObjectiveStatusTimePanel"
+		"xpos"										"cs-0.5"
+		"ypos"										"6"
+		"zpos"										"5"
+		"wide"										"60"
+		"tall"										"30"
+		"visible"									"1"
+		"enabled"									"1"
+		"delta_item_x"								"9"
+		"delta_item_start_y"						"29"
+		"delta_item_end_y"							"29"
+		"PositiveColor"								"0 255 0 255"
+		"NegativeColor"								"255 0 0 255"
+		"delta_lifetime"							"1"
+		"delta_item_font"							"m0refont11"
+		"proportionaltoparent"						"1"
 
-		if_match
-		{
-			"xpos"					"cs-0.5"
-			"wide"					"110"
-			"ypos_minmode"			"0"
-			"delta_item_x"			"35"
-			"delta_item_start_y"	"12"
-			"delta_item_end_y"		"50"
-			"PositiveColor"			"0 255 0 255"
-			"NegativeColor"			"255 0 0 255"
-			"delta_lifetime"		"1.5"
-			"delta_item_font"		"Zesty14"
-		}
-		
 		"TimePanelValue"
 		{
-			"ControlName"		"CExLabel"
-			"fieldName"		"TimePanelValue"
-			"font"			"surface10shadow"
-			"fgcolor"		"255 255 255 255"
-			"xpos"			"0"
-			"ypos"			"3"
-			"zpos"			"3"
-			"wide"			"110"
-			"tall"			"30"
-			"visible"		"1"
-			"enabled"		"1"
-			"textAlignment"		"center"
-			"labelText"		"0:00"	
-		}	
-		
-				
+			"ControlName"							"CExLabel"
+			"fieldName"								"TimePanelValue"
+			"xpos"									"cs-0.5"
+			"ypos"									"0"
+			"zpos"									"3"
+			"wide"									"f0"
+			"tall"									"18"
+			"visible"								"1"
+			"enabled"								"1"
+			"proportionaltoparent"					"1"
+			"textAlignment"							"center"
+			"labelText"								"0:00"
+			"font"									"m0refont18Shadow"
+			"fgcolor"								"White"
+
+			"if_match"
+			{
+				"ypos"								"0"
+				"tall"								"18"
+				"font"								"m0refont18Shadow"
+			}
+		}
 	}
 	"TeamStatus"
 	{

@@ -323,7 +323,7 @@
 	"HudRoundTimer"
 	{
 		"fieldName"									"HudRoundTimer"
-		"xpos"										"c-20"
+		"xpos"										"cs-0.5"
 		"ypos"										"440"
 		"wide"										"120"
 		"tall"										"40"

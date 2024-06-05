@@ -31,22 +31,53 @@
 		// custom stuff tysm quickkennedy
 		"VolumeSlider"
 		{
-			"ControlName"        "CCvarSlider"
-			"fieldName"        "VolumeSlider"
-			"xpos"        "170"
-			"ypos"        "2"
-			"wide"        "60"
-			"tall"        "19"
+			"ControlName"        					"CCvarSlider"
+			"fieldName"        						"VolumeSlider"
+			"xpos"        							"170"
+			"ypos"        							"2"
+			"wide"        							"60"
+			"tall"        							"19"
 
-			"visible"        "1"
+			"visible"        						"1"
 
-			"leftText"        ""
-			"rightText"        ""
-			"minvalue"        "0.05"
-			"maxvalue"        "0.25"
-			"numTicks"        "4"
-			"cvar_name"        "volume"
-			"allowoutofrange"        "0"
+			"leftText"        						""
+			"rightText"        						""
+			"minvalue"        						"0.05"
+			"maxvalue"        						"0.25"
+			"numTicks"        						"4"
+			"cvar_name"        						"volume"
+			"allowoutofrange"        				"0"
+		}
+		
+		"SniperScopeToggle"
+		{
+			"ControlName"							"Button"
+			"fieldName"								"SniperScopeToggle"
+			"xpos"									"2"
+			"ypos"									"-3"
+			"zpos"									"15"
+			"wide"									"19"
+			"tall"									"19"
+			
+			"pin_to_sibling"						"VolumeSlider"
+			"pin_corner_to_sibling"					"PIN_CENTER_LEFT"
+			"pin_to_sibling_corner"					"PIN_CENTER_RIGHT"
+			
+			"Command"								"engine toggle cl_autorezoom"
+			"actionsignallevel"                     "3"
+			
+			"labeltext"								"h"
+			"font"									"Symbols18"
+			"textAlignment"							"center"
+			"sound_depressed"						"UI/buttonclick.wav"
+			"sound_released"						"UI/buttonclickrelease.wav"
+
+			"paintbackground"						"0"
+			"paintborder"							"0"
+
+			"defaultFgColor_override"				"White"
+			"armedFgColor_override"					"Menu_Accent"
+			"depressedFgColor_override"				"Menu_Accent"
 		}
 		
 		

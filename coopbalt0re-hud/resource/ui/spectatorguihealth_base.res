@@ -52,7 +52,7 @@
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"HealthValue_Target"
-		"xpos"										"-5"	// I hate this but it's better than having a huge gap between health and name
+		"xpos"										"-7"	// I hate this but it's better than having a huge gap between health and name
 		"xpos_minmode"								"-2"
 		"ypos"										"0"
 		"zpos"										"20"
